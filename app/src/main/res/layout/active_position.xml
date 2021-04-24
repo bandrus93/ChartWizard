@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activePosition"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bullGreen">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="24dp"
+        android:alpha="0.75"
+        app:cardBackgroundColor="@color/colorPrimary"
+        app:cardCornerRadius="4dp"
+        app:layout_constraintBottom_toTopOf="@+id/exitPosition"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/activeSymbol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:text="TextView"
+            android:textColor="@color/colorPrimaryLight"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/tradePriceLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/break_even_label"
+            android:textColor="@color/colorPrimaryLight"
+            android:textSize="18sp"
+            android:translationY="124dp" />
+
+        <TextView
+            android:id="@+id/currentPriceLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/current_price_label"
+            android:textColor="@color/colorPrimaryLight"
+            android:textSize="18sp"
+            android:translationY="66dp" />
+
+        <TextView
+            android:id="@+id/stoplossLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/stoploss_hint"
+            android:textColor="@color/colorPrimaryLight"
+            android:textSize="18sp"
+            android:translationY="182dp" />
+
+        <TextView
+            android:id="@+id/takeProfitLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/take_profit_hint"
+            android:textColor="@color/colorPrimaryLight"
+            android:textSize="18sp"
+            android:translationY="240dp" />
+
+        <TextView
+            android:id="@+id/takeProfitPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="TextView"
+            android:textColor="@color/colorPrimaryLight"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:translationY="269dp" />
+
+        <TextView
+            android:id="@+id/stoplossPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="TextView"
+            android:textColor="@color/colorPrimaryLight"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:translationY="211dp" />
+
+        <TextView
+            android:id="@+id/tradePrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="TextView"
+            android:textColor="@color/colorPrimaryLight"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:translationY="153dp" />
+
+        <TextView
+            android:id="@+id/currentPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="TextView"
+            android:textColor="@color/colorPrimaryLight"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:translationY="95dp" />
+
+        <ImageView
+            android:id="@+id/tradeIndicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="54dp"
+            android:layout_marginLeft="54dp"
+            android:translationY="92dp"
+            app:srcCompat="@drawable/ic_bull_indicator" />
+
+        <ImageView
+            android:id="@+id/stoplossIndicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="54dp"
+            android:layout_marginLeft="54dp"
+            android:translationY="208dp"
+            app:srcCompat="@drawable/ic_bull_indicator" />
+
+        <ImageView
+            android:id="@+id/profitIndicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="54dp"
+            android:layout_marginLeft="54dp"
+            android:translationY="266dp"
+            app:srcCompat="@drawable/ic_bear_indicator" />
+
+        <ImageView
+            android:id="@+id/evenIndicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="54dp"
+            android:layout_marginLeft="54dp"
+            android:translationY="150dp"
+            app:srcCompat="@drawable/ic_bear_indicator" />
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/exitPosition"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="32dp"
+        android:background="@color/bearRed"
+        android:text="@string/exit_long_text"
+        android:textColor="@color/colorPrimaryLight"
+        android:textColorHint="@color/colorPrimaryLight"
+        android:textColorLink="@color/colorPrimaryLight"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/newWindow"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#75757A">
+
+    <Spinner
+        android:id="@+id/selectAsset"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.060000002" />
+
+    <EditText
+        android:id="@+id/priceFloor"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:autoText="false"
+        android:ems="10"
+        android:hint="@string/price_floor_hint"
+        android:inputType="numberDecimal"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="@android:color/darker_gray"
+        android:textColorHint="#FFFFFF"
+        android:textColorLink="@android:color/darker_gray"
+        android:textCursorDrawable="@android:color/darker_gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/useResistance" />
+
+    <EditText
+        android:id="@+id/priceCeiling"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:ems="10"
+        android:hint="@string/price_ceiling_hint"
+        android:inputType="numberDecimal"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="@android:color/darker_gray"
+        android:textColorHint="#FFFFFF"
+        android:textColorLink="@android:color/darker_gray"
+        android:textCursorDrawable="@android:color/darker_gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/selectAsset" />
+
+    <EditText
+        android:id="@+id/supportLevel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:hint="@string/support_level_hint"
+        android:inputType="numberDecimal"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="@android:color/darker_gray"
+        android:textColorHint="#FFFFFF"
+        android:textColorLink="@android:color/darker_gray"
+        android:textCursorDrawable="@android:color/darker_gray"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/useSupport" />
+
+    <EditText
+        android:id="@+id/resistanceLevel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:hint="@string/resistance_level_hint"
+        android:inputType="numberDecimal"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="@android:color/darker_gray"
+        android:textColorHint="#FFFFFF"
+        android:textColorLink="@android:color/darker_gray"
+        android:textCursorDrawable="@android:color/darker_gray"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/supportLevel2" />
+
+    <CheckBox
+        android:id="@+id/useSupport"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="@string/support_check_text"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/priceFloor" />
+
+    <CheckBox
+        android:id="@+id/useResistance"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="@string/resistance_check_text"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/priceCeiling" />
+
+    <Button
+        android:id="@+id/addToList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="32dp"
+        android:background="@color/secondaryAccent"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        android:text="@string/add_to_list_text"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/resistanceLevel" />
+
+    <Button
+        android:id="@+id/cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/cancel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/addToList"
+        app:layout_constraintTop_toBottomOf="@+id/resistanceLevel" />
+
+    <ImageButton
+        android:id="@+id/addSupport"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:tint="#04AABF"
+        app:layout_constraintStart_toEndOf="@+id/supportLevel"
+        app:layout_constraintTop_toBottomOf="@+id/useSupport"
+        app:srcCompat="@android:drawable/ic_menu_add" />
+
+    <EditText
+        android:id="@+id/supportLevel1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:hint="@string/support_level_hint"
+        android:inputType="numberDecimal"
+        android:textColorHint="#FFFFFF"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/supportLevel" />
+
+    <ImageButton
+        android:id="@+id/removeSupport1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:tint="#F62929"
+        android:visibility="gone"
+        app:layout_constraintStart_toEndOf="@+id/supportLevel1"
+        app:layout_constraintTop_toBottomOf="@+id/supportLevel"
+        app:srcCompat="@android:drawable/ic_menu_close_clear_cancel" />
+
+    <EditText
+        android:id="@+id/supportLevel2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:hint="@string/support_level_hint"
+        android:inputType="number"
+        android:textColorHint="#FFFFFF"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/supportLevel1" />
+
+    <ImageButton
+        android:id="@+id/removeSupport2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:tint="#f62929"
+        android:visibility="gone"
+        app:layout_constraintStart_toEndOf="@+id/supportLevel2"
+        app:layout_constraintTop_toBottomOf="@+id/supportLevel1"
+        app:srcCompat="@android:drawable/ic_menu_close_clear_cancel" />
+
+    <ImageButton
+        android:id="@+id/addResistance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:tint="#04AABF"
+        app:layout_constraintStart_toEndOf="@+id/resistanceLevel"
+        app:layout_constraintTop_toBottomOf="@+id/supportLevel2"
+        app:srcCompat="@android:drawable/ic_menu_add" />
+
+    <EditText
+        android:id="@+id/resistanceLevel1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:hint="@string/resistance_level_hint"
+        android:inputType="number"
+        android:textColorHint="#FFFFFF"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/resistanceLevel" />
+
+    <ImageButton
+        android:id="@+id/removeResistance1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:tint="#f62929"
+        android:visibility="gone"
+        app:layout_constraintStart_toEndOf="@+id/resistanceLevel1"
+        app:layout_constraintTop_toBottomOf="@+id/resistanceLevel"
+        app:srcCompat="@android:drawable/ic_menu_close_clear_cancel" />
+
+    <EditText
+        android:id="@+id/resistanceLevel2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:hint="@string/resistance_level_hint"
+        android:inputType="number"
+        android:textColorHint="#FFFFFF"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/resistanceLevel1" />
+
+    <ImageButton
+        android:id="@+id/removeResistance2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:tint="#f62929"
+        android:visibility="gone"
+        app:layout_constraintStart_toEndOf="@+id/resistanceLevel2"
+        app:layout_constraintTop_toBottomOf="@+id/resistanceLevel1"
+        app:srcCompat="@android:drawable/ic_menu_close_clear_cancel" />
+</androidx.constraintlayout.widget.ConstraintLayout>

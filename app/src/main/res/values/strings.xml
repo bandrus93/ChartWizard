@@ -1,0 +1,68 @@
+<resources>
+    <string name="app_name">Chart Wizard</string>
+    <string name="main_activity_title">Watching For:</string>
+    <string name="buy_label">Buy Opportunities</string>
+    <string name="sell_label">Sell Opportunities</string>
+    <string name="super_label">Both</string>
+    <string name="add_new_content_description">Add New Asset</string>
+    <string name="support_level_hint">Support Level</string>
+    <string name="resistance_level_hint">Resistance Level</string>
+    <string name="price_floor_hint">Price Floor</string>
+    <string name="price_ceiling_hint">Price Ceiling</string>
+    <string name="support_check_text">Use as support level</string>
+    <string name="resistance_check_text">Use as resistance level</string>
+    <string name="add_to_list_text">Add to Watchlist</string>
+    <string name="stoploss_hint">Stoploss</string>
+    <string name="purchase_price_hint">Purchase Price</string>
+    <string name="sale_price_hint">Sale Price</string>
+    <string name="purchase_amount_hint">Purchase Amount</string>
+    <string name="sale_amount_hint">Sale Amount</string>
+    <string name="break_even_label">Break Even</string>
+    <string name="interest_hint">Interest Rate</string>
+    <string name="take_profit_hint">Minimum Profit Price</string>
+    <string name="open_long_text">Open Long</string>
+    <string name="open_short_text">Open Short</string>
+    <string name="current_price_label">Current Price</string>
+    <string name="exit_long_text">Cash Out</string>
+    <string name="exit_short_text">Buy Back</string>
+    <string name="kill_confirm_button_text">Clear All</string>
+    <string name="kill_confirm_title">Clear List?</string>
+    <string name="kill_confirm_message">Are you sure…</string>
+    <string name="kill_confirm">Clear</string>
+    <string name="save">Save Changes</string>
+    <string name="cancel">Cancel</string>
+    <string name="error_header">Error: </string>
+    <string name="channel_name">Trade Alerts</string>
+    <string name="channel_description">Buy/Sell opportunity alerts</string>
+    <string name="channel_group">Trade Opportunities</string>
+    <string-array name="assets_array">
+        <item>Bitcoin(BTC)</item>
+        <item>Ether(ETH)</item>
+        <item>XRP(XRP)</item>
+        <item>Litecoin(LTC)</item>
+        <item>Bitcoin Cash(BCH)</item>
+        <item>EOS(EOS)</item>
+        <item>Dash(DASH)</item>
+        <item>Orchid(OXT)</item>
+        <item>Maker(MKR)</item>
+        <item>Stellar(XLM)</item>
+        <item>Cosmos(ATOM)</item>
+        <item>Tezos(XTZ)</item>
+        <item>Ether Classic(ETC)</item>
+        <item>OmiseGO(OMG)</item>
+        <item>Chainlink(LINK)</item>
+        <item>Augur(REP)</item>
+        <item>0x(ZRX)</item>
+        <item>Algorand(ALGO)</item>
+        <item>Kyber Network(KNC)</item>
+        <item>Compound(COMP)</item>
+        <item>Band(BAND)</item>
+        <item>Numeraire(NMR)</item>
+        <item>Celo(CGLD)</item>
+        <item>UMA(UMA)</item>
+        <item>Loopring(LRC)</item>
+        <item>Uniswap(UNI)</item>
+        <item>Ren(REN)</item>
+        <item>Balancer(BAL)</item>
+    </string-array>
+</resources>
